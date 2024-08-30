@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background: #fc0;
+}
+
+/*Header*/
+header {
+    height: 100vh;
+    background-image: linear-gradient(-225deg,
+            hsla(251, 35%, 36%, 0.39) 0%,
+            hsla(198, 52%, 43%, 0.39) 51%,
+            hsla(173, 64%, 51%, 0.39) 100%),
+        url(../Actividad7_Clase7/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.banner {
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*MAIN*/
+main {
+    overflow: hidden;
+}
+
+.contexto {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.inicio_contexto {
+    margin-left: 50px;
+}
+
+.context_img {
+    text-align: center;
+}
+
+.parra {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.img_cont {
+    width: 80%;
+    height: 80%;
+}
+
+/*Section Fases*/
+
+.fases {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+h2 {
+    color: midnightblue;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+p {
+    text-align: justify;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+
+.sub {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+
+/*Section Tabla*/
+.tabla_luna {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3px;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(-225deg,
+            hsla(251, 35%, 36%, 0.2) 0%,
+            hsla(198, 52%, 43%, 0.2) 51%,
+            hsla(173, 64%, 51%, 0.2) 100%),
+        url(../Actividad7_Clase7/img/tabla.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.conta_luna {
+    border: solid 1px rgba(80, 34, 102, 0.2);
+    overflow-y: scroll;
+    height: calc(66vh - 150px);
+}
+
+table {
+    color: #fff;
+    font-size: 20px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgb(15, 90, 201);
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: solid 1px rgba(82, 17, 119, 0.2);
+}
+
+tbody tr {
+    cursor: pointer;
+    background: #d9ebf7a6;
+    color: black;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background: rgba(4, 77, 99, 0.685);
+    color: #fff;
+}
+
+.contexto_luna {
+    margin-right: 50px;
+    background: #fff;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parra_tabla{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+}
+
+
+/*Section Footer*/
+footer {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+a[href="https://www.nationalgeographic.es/espacio/fases-lunares-explicacion"] {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #473B7B;
+}
+
+a[href="https://www.nationalgeographic.es/espacio/fases-lunares-explicacion"]:hover {
+    background-color: #fff;
+    border: 2px solid #3584A7;
+    color: #473B7B;
+}
